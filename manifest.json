@@ -40,7 +40,7 @@
       "icons": [
         {
           "src": "assets/icons/shortcut-test-96.png",
-          "sizes": "96x96",
+          "sizes": "1024x1024",
           "type": "image/png"
         }
       ]
@@ -68,7 +68,7 @@
     },
     {
       "src": "assets/icons/icon-96.png",
-      "sizes": "96x96",
+      "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any"
     },
@@ -131,8 +131,8 @@
     },
     {
       "src": "assets/screenshots/screenshot-2.png",
-      "sizes": "1080x1920",
-      "type": "image/png",
+      "sizes": "482x815",
+      "type": "image/jpeg",
       "form_factor": "narrow",
       "label": "وضع التحدي السريع"
     },
