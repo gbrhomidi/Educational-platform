@@ -20,10 +20,7 @@ const STATIC_ASSETS = [
     '/js/adaptive-ai.js',
     '/js/app-version.js',
     // تم استبدال ui.js بالملفات الأربعة
-    '/js/ui-core.js',
-    '/js/ui-modals.js',
-    '/js/ui-game.js',
-    '/js/ui-manage.js',
+    '/js/ui.js',
     '/sw.js'
 ];
 
