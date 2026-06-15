@@ -2,7 +2,7 @@
   "name": "المنصة التعليمية الذكية",
   "short_name": "تعليمي الذكي",
   "description": "منصة تعليمية تفاعلية تعمل بدون إنترنت لبناء وإدارة الاختبارات. تدعم الربط المباشر بين الأجهزة (P2P) لمشاركة بنك الأسئلة.",
-  "start_url": "/https://gbrhomidi.github.io/Educational-platform/index.html",
+  "start_url": "/index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
