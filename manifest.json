@@ -196,5 +196,10 @@
       "auto"
     ]
   },
-  "iarc_rating_id": "8+"
+  "iarc_rating_id": "8+",
+  "display_override": [
+    "fullscreen",
+    "standalone",
+    "window-controls-overlay"
+  ]
 }
