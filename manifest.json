@@ -80,7 +80,7 @@
     },
     {
       "src": "assets/icons/icon-144.png",
-      "sizes": "144x144",
+      "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any"
     },
@@ -145,7 +145,7 @@
     },
     {
       "src": "assets/screenshots/screenshot-wide-1.png",
-      "sizes": "1920x1080",
+      "sizes": "482x837",
       "type": "image/jpeg",
       "form_factor": "wide",
       "label": "الشاشة الرئيسية - وضع سطح المكتب"
