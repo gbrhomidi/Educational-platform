@@ -27,7 +27,7 @@
       "icons": [
         {
           "src": "assets/icons/shortcut-practice-96.png",
-          "sizes": "96x96",
+          "sizes": "1024x1024",
           "type": "image/png"
         }
       ]
@@ -62,8 +62,8 @@
   "icons": [
     {
       "src": "assets/icons/icon-72.png",
-      "sizes": "72x72",
-      "type": "image/png",
+      "sizes": "1024x1024",
+      "type": "image/jpeg",
       "purpose": "any"
     },
     {
@@ -124,8 +124,8 @@
   "screenshots": [
     {
       "src": "assets/screenshots/screenshot-1.png",
-      "sizes": "1080x1920",
-      "type": "image/png",
+      "sizes": "482x827",
+      "type": "image/jpeg",
       "form_factor": "narrow",
       "label": "الشاشة الرئيسية"
     },
