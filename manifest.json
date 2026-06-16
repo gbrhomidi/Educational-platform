@@ -27,7 +27,7 @@
       "icons": [
         {
           "src": "assets/icons/shortcut-practice-96.png",
-          "sizes": "1024x1024",
+          "sizes": "96x96",
           "type": "image/png"
         }
       ]
@@ -40,7 +40,7 @@
       "icons": [
         {
           "src": "assets/icons/shortcut-test-96.png",
-          "sizes": "1024x1024",
+          "sizes": "96x96",
           "type": "image/png"
         }
       ]
@@ -53,7 +53,7 @@
       "icons": [
         {
           "src": "assets/icons/shortcut-manage-96.png",
-          "sizes": "1024x1024",
+          "sizes": "96x96",
           "type": "image/png"
         }
       ]
@@ -62,31 +62,31 @@
   "icons": [
     {
       "src": "assets/icons/icon-72.png",
-      "sizes": "1024x1024",
-      "type": "image/jpeg",
+      "sizes": "72x72",
+      "type": "image/png",
       "purpose": "any"
     },
     {
       "src": "assets/icons/icon-96.png",
-      "sizes": "1024x1024",
+      "sizes": "96x96",
       "type": "image/png",
       "purpose": "any"
     },
     {
       "src": "assets/icons/icon-128.png",
-      "sizes": "1024x1024",
+      "sizes": "128x128",
       "type": "image/png",
       "purpose": "any"
     },
     {
       "src": "assets/icons/icon-144.png",
-      "sizes": "1024x1024",
+      "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     },
     {
       "src": "assets/icons/icon-152.png",
-      "sizes": "1024x1024",
+      "sizes": "152x152",
       "type": "image/png",
       "purpose": "any"
     },
@@ -124,29 +124,29 @@
   "screenshots": [
     {
       "src": "assets/screenshots/screenshot-1.png",
-      "sizes": "482x827",
-      "type": "image/jpeg",
+      "sizes": "1080x1920",
+      "type": "image/png",
       "form_factor": "narrow",
       "label": "الشاشة الرئيسية"
     },
     {
       "src": "assets/screenshots/screenshot-2.png",
-      "sizes": "482x815",
-      "type": "image/jpeg",
+      "sizes": "1080x1920",
+      "type": "image/png",
       "form_factor": "narrow",
       "label": "وضع التحدي السريع"
     },
     {
       "src": "assets/screenshots/screenshot-3.png",
-      "sizes": "482x836",
-      "type": "image/jpeg",
+      "sizes": "1080x1920",
+      "type": "image/png",
       "form_factor": "narrow",
       "label": "وضع الاختبار"
     },
     {
       "src": "assets/screenshots/screenshot-wide-1.png",
-      "sizes": "482x837",
-      "type": "image/jpeg",
+      "sizes": "1080x1920",
+      "type": "image/png",
       "form_factor": "wide",
       "label": "الشاشة الرئيسية - وضع سطح المكتب"
     }
