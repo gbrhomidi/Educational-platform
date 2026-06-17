@@ -21,6 +21,11 @@ const STATIC_ASSETS = [
     '/Educational-platform/js/adaptive-ai.js',
     '/Educational-platform/js/app-version.js',
     '/Educational-platform/js/ui.js',
+    '/Educational-platform/js/constants.js',
+    '/Educational-platform/js/app.js',
+    '/Educational-platform/libs/dexie.min.js',
+    '/Educational-platform/libs/confetti.browser.min.js',
+    '/Educational-platform/libs/qrcode.min.js',
     '/Educational-platform/sw.js'
 ];
 
