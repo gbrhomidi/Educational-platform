@@ -1,27 +1,27 @@
 /* ==================== SERVICE WORKER (محسّن ومُعالَج) ==================== */
-const CACHE_NAME = 'smart-learning-v6'; // تم تغيير الإصدار
+const CACHE_NAME = 'smart-learning-v7'; // تغيير الإصدار لضمان تحديث الكاش
+
 const STATIC_ASSETS = [
-    '/',
-    '/index.html',
-    '/css/themes.css',
-    '/css/animations.css',
-    '/css/style.css',
-    '/js/error-handler.js',
-    '/js/store.js',
-    '/js/question-validator.js',
-    '/js/db.js',
-    '/js/translations.js',
-    '/js/theme-manager.js',
-    '/js/achievements.js',
-    '/js/network.js',
-    '/js/game.js',
-    '/js/audio.js',
-    '/js/splash.js',
-    '/js/adaptive-ai.js',
-    '/js/app-version.js',
-    // تم استبدال ui.js بالملفات الأربعة
-    '/js/ui.js',
-    '/sw.js'
+    '/Educational-platform/',
+    '/Educational-platform/index.html',
+    '/Educational-platform/css/themes.css',
+    '/Educational-platform/css/animations.css',
+    '/Educational-platform/css/style.css',
+    '/Educational-platform/js/error-handler.js',
+    '/Educational-platform/js/store.js',
+    '/Educational-platform/js/question-validator.js',
+    '/Educational-platform/js/db.js',
+    '/Educational-platform/js/translations.js',
+    '/Educational-platform/js/theme-manager.js',
+    '/Educational-platform/js/achievements.js',
+    '/Educational-platform/js/network.js',
+    '/Educational-platform/js/game.js',
+    '/Educational-platform/js/audio.js',
+    '/Educational-platform/js/splash.js',
+    '/Educational-platform/js/adaptive-ai.js',
+    '/Educational-platform/js/app-version.js',
+    '/Educational-platform/js/ui.js',
+    '/Educational-platform/sw.js'
 ];
 
 // Install: Cache static assets with error handling
@@ -76,13 +76,21 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
     const url = new URL(event.request.url);
     
+    // تجاهل الطلبات غير GET أو خارج النطاق
     if (event.request.method !== 'GET') return;
     if (!event.request.url.startsWith(self.location.origin)) return;
     if (url.pathname.includes('analytics') || url.pathname.includes('collect')) return;
     
+    // التحقق مما إذا كان الطلب ضمن مسار التطبيق (لتجنب ملفات GitHub Pages الأخرى)
+    if (!url.pathname.startsWith('/Educational-platform/') && url.pathname !== '/Educational-platform/') {
+        // إذا كان الطلب لملف خارج نطاق التطبيق، نتركه للمتصفح
+        return;
+    }
+    
     event.respondWith(
         caches.match(event.request).then(cached => {
             if (cached) {
+                // تحديث الكاش في الخلفية للموارد غير المستندات
                 if (event.request.destination !== 'document' && event.request.destination !== 'font') {
                     event.waitUntil(
                         fetch(event.request).then(networkResponse => {
@@ -96,6 +104,7 @@ self.addEventListener('fetch', event => {
                 return cached;
             }
             
+            // محاولة جلب من الشبكة
             return fetch(event.request).then(networkResponse => {
                 if (networkResponse.ok && event.request.destination !== 'document' && event.request.destination !== 'font') {
                     const clone = networkResponse.clone();
@@ -103,8 +112,9 @@ self.addEventListener('fetch', event => {
                 }
                 return networkResponse;
             }).catch(() => {
+                // في حالة فشل الشبكة وعدم وجود كاش
                 if (event.request.destination === 'document') {
-                    return caches.match('/index.html');
+                    return caches.match('/Educational-platform/index.html');
                 }
                 return new Response('⚠️ هذا المورد غير متوفر حالياً (لا يوجد اتصال بالإنترنت)', {
                     status: 503,
