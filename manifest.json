@@ -145,7 +145,7 @@
     },
     {
       "src": "assets/screenshots/screenshot-wide-1.png",
-      "sizes": "1080x1920",
+      "sizes": "1920x1080",
       "type": "image/png",
       "form_factor": "wide",
       "label": "الشاشة الرئيسية - وضع سطح المكتب"
@@ -196,14 +196,9 @@
       "auto"
     ]
   },
-  "iarc_rating_id": "8+",
   "display_override": [
     "fullscreen",
     "standalone",
     "window-controls-overlay"
-  ],
-  "related_applications": [],
-  "widgets": [],
-  "edge_side_panel": {},
-  "note_taking": {}
+  ]
 }
