@@ -2,8 +2,8 @@
   "name": "المنصة التعليمية الذكية",
   "short_name": "تعليمي الذكي",
   "description": "منصة تعليمية تفاعلية تعمل بدون إنترنت لبناء وإدارة الاختبارات. تدعم الربط المباشر بين الأجهزة (P2P) لمشاركة بنك الأسئلة.",
-  "start_url": "/index.html",
-  "scope": "./",
+  "start_url": "/Educational-platform/index.html",
+  "scope": "/Educational-platform/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0d1117",
@@ -23,7 +23,7 @@
       "name": "تحدي سريع",
       "short_name": "تحدي",
       "description": "ابدأ تحدياً سريعاً مباشرة",
-      "url": "./index.html?mode=practice",
+      "url": "/Educational-platform/index.html?mode=practice",
       "icons": [
         {
           "src": "assets/icons/shortcut-practice-96.png",
@@ -36,7 +36,7 @@
       "name": "اختبر معلوماتك",
       "short_name": "اختبار",
       "description": "ابدأ اختباراً رسمياً",
-      "url": "./index.html?mode=test",
+      "url": "/Educational-platform/index.html?mode=test",
       "icons": [
         {
           "src": "assets/icons/shortcut-test-96.png",
@@ -49,7 +49,7 @@
       "name": "إدارة الأسئلة",
       "short_name": "أسئلة",
       "description": "أدر أسئلتك التعليمية",
-      "url": "./index.html?mode=manage",
+      "url": "/Educational-platform/index.html?mode=manage",
       "icons": [
         {
           "src": "assets/icons/shortcut-manage-96.png",
@@ -154,11 +154,11 @@
   "protocol_handlers": [
     {
       "protocol": "web+quiz",
-      "url": "./index.html?action=%s"
+      "url": "/Educational-platform/index.html?action=%s"
     }
   ],
   "share_target": {
-    "action": "./index.html",
+    "action": "/Educational-platform/index.html",
     "method": "POST",
     "enctype": "multipart/form-data",
     "params": {
@@ -178,7 +178,7 @@
   },
   "file_handlers": [
     {
-      "action": "./index.html",
+      "action": "/Educational-platform/index.html",
       "accept": {
         "text/plain": [
           ".txt"
