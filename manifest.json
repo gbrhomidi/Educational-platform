@@ -201,5 +201,9 @@
     "fullscreen",
     "standalone",
     "window-controls-overlay"
-  ]
+  ],
+  "related_applications": [],
+  "widgets": [],
+  "edge_side_panel": {},
+  "note_taking": {}
 }
